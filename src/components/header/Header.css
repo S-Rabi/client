@@ -1,0 +1,42 @@
+.hero {
+  height: 60vh;
+}
+.hero img {
+  height: 60vh;
+  width: 100vw;
+}
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: white;
+}
+
+.nav-item {
+  color: #021f3c;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: "Dosis", sans-serif;
+}
+.nav-item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+.nav-item:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

@@ -1,0 +1,255 @@
+span {
+  font-size: larger;
+}
+
+.menu-card {
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  background-color: #eee;
+}
+.menu-card2 {
+  margin-top: 90px;
+}
+.img {
+  width: 520px;
+  height: 320px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 200px;
+  margin: auto;
+  color: #000000;
+}
+.btn {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #333333;
+  width: 250px;
+  height: 60px;
+}
+
+.socialMedia-facebook {
+  background-color: #4267b2;
+  width: 100%;
+}
+.socialMedia-instagram {
+  background-color: #d62976;
+  width: 100%;
+}
+.btn:hover {
+  background-color: #232222;
+  font-weight: bold;
+}
+
+/* NAVBAR css start from here */
+.logo {
+  height: 90px;
+  cursor: pointer;
+}
+
+/* Card component css start from here */
+.card-page {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.card {
+  margin: 40px;
+}
+/* ----------------------------------------------*/
+/* PRICE LIST CSS */
+.bev-h2 {
+  margin-top: 100px;
+}
+.menu-priceList {
+  width: 100vw;
+  height: fit-content;
+}
+.priceListHeader {
+  border-bottom: 1px gray solid;
+  padding: 20px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.priceListContainer {
+  display: flex;
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 9px 0px;
+}
+.priceListContainer:hover {
+  font-size: large;
+}
+.priceListImg {
+  margin: auto;
+  width: 120px;
+}
+.priceListImg img {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 120px;
+  height: 80px;
+}
+
+.priceListDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------*/
+/* CONTACT  */
+
+.openingHours span {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+/* ----------------------------------------------*/
+/* .submit {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.6s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.submit:hover {
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
+} */
+
+/* MEDIA QUERY FOR MAIN PARTS */
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .menu-card {
+    width: 100%;
+    margin: 40px auto;
+  }
+  .img {
+    width: 470px;
+    height: 290px;
+  }
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .roasting-img {
+    width: 100%;
+  }
+  .roasting-text {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 581px) and (max-width: 768px) {
+  .menu-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20 10px;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .img {
+    width: 90%;
+    height: 100%;
+  }
+  .btn {
+    width: 200px;
+    height: 55px;
+  }
+  .menu-card2 img {
+    margin-left: 40px;
+  }
+  .card-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin: 20px;
+  }
+  .card-btn {
+    width: 100%;
+  }
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .roasting-img {
+    width: 100%;
+  }
+  .roasting-text {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 580px) {
+  .menu-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .online-product-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    text-align: center;
+  }
+  .online-products-text-container .text-container {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .img {
+    box-shadow: none;
+  }
+  .card-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin: 20px;
+  }
+  .card-btn {
+    width: 100%;
+  }
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .roasting-img {
+    width: 100%;
+  }
+  .roasting-text {
+    width: 90%;
+  }
+}
